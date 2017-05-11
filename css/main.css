@@ -6,23 +6,21 @@
 html, body,.contenedor-papa{
   background-image: url(../img/landscape.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
- position: relative;
 }
 
 .contenedor{
   width:40%;
-  position: relative;
+  margin: auto;
 }
 .gato{
   width: 100%;
-  position: absolute;
-  margin-top:50%;
-  display: block;
   }
+
   #gatoAcostado{
     display:none;
   }
@@ -60,21 +58,18 @@ html, body,.contenedor-papa{
   }
 }
 
-
-
-
 @media(max-width:480px){
   .contenedor-papa{
     background-image: url(../img/midnight-conversation_861064.jpg);
   }
   #gatoAcostado{
-    display:none;
+    display:block;
   }
   .gato{
     display:none;
   }
   #gatoDormido{
-    display:block;
+    display:none;
   }
 }
 
