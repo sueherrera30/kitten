@@ -1,0 +1,94 @@
+body{
+  margin:0;
+  padding: 0;
+  background-image: url(../img/landscape.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  /*height: 100%
+  max-width: 1200px;*/
+}
+.contenedor{
+  width:40%;
+  position: relative;
+}
+.gato{
+  width: 100%;
+  position: absolute;
+  margin-top:50%;
+  display: block;
+  }
+  #gatoAcostado{
+    display:none;
+  }
+  #gatoDormido{
+    display:none;
+  }
+
+  /*inician breakpoints con  responsive*/
+
+@media(max-width:1024px){
+  body{
+    background-image: url(../img/dawn.png);
+  }
+  #gatoAcostado{
+    display:none;
+  }
+  #gatoDormido{
+    display:none;
+  }
+}
+
+
+
+@media(max-width:768px){
+  body{
+    background-image: url(../img/dawn.png);
+  }
+  #gatoAcostado{
+    display:block;
+  }
+  .gato{
+    display: none;
+  }
+  #gatoDormido{
+    display:none;
+  }
+}
+
+
+
+
+@media(max-width:480px){
+  body{
+    background-image: url(../img/midnight-conversation_861064.jpg);
+  }
+  #gatoAcostado{
+    display:none;
+  }
+  .gato{
+    display:none;
+  }
+  #gatoDormido{
+    display:block;
+  }
+}
+
+
+
+@media(max-width:320px){
+  body{
+    background-image: url(../img/maxresdefault.jpg);
+  }
+  #gatoAcostado{
+    display:none;
+  }
+  .gato{
+    display:none;
+  }
+  #gatoDormido{
+    display:block;
+  }
+}
